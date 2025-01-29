@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <link rel="icon" href="file:///C:/Users/mathi/Downloads/portfolio_351456.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#skills" aria-haspopup="true" aria-expanded="false">Compétences</a>
+                    <ul class="dropdown">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">MySQL</a></li>
+                        <li><a href="#">Git</a></li>
+                        <li><a href="#">Linux</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>À propos</h1>
+            <p>Bienvenue sur mon portfolio !</p>
+            <p>Actuellement étudiant en BTS Services Informatiques aux Organisations (SIO), je me passionne pour l'informatique et le développement web. À travers ma formation, j'ai acquis des compétences en programmation, gestion de projets et résolution de problèmes informatiques, me permettant de relever les défis techniques d'aujourd'hui.
+
+                Mon parcours m'a permis d'explorer différents domaines, notamment le développement d'applications web et mobiles, ainsi que l'administration réseau. Je m'intéresse particulièrement à la création de solutions web innovantes, combinant performances, design moderne et expérience utilisateur optimale.
+                
+                Mes compétences principales incluent :
+                
+                Développement web : HTML, CSS, JavaScript, PHP, SQL.
+                Gestion de bases de données et développement back-end.
+                Analyse et conception de projets informatiques.
+                Veille technologique pour rester à jour sur les nouvelles tendances.
+                En dehors de mes études, je consacre du temps à développer des projets personnels pour mettre en pratique mes apprentissages et explorer de nouvelles technologies. Je suis également passionné par les jeux vidéo et les activités en plein air, ce qui me permet de garder un bon équilibre entre ma vie professionnelle et personnelle.
+                
+                Je suis motivé, curieux et prêt à relever de nouveaux défis. Mon objectif est de continuer à apprendre et à contribuer activement à des projets stimulants. Si vous cherchez quelqu'un d'engagé et passionné pour votre équipe, n'hésitez pas à me contacter !</p>
+        </section>
+        <section id="projects">
+            <h1>Projets</h1>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <img src="logo-asse.png" alt="création d'un site web sur l'histoire de l'asse">
+                    <img src="Unofficial_JavaScript_logo_2.svg.png" alt="création d'un portfolio via le langage de programmation JavaScript">
+                    <img src="téléchargé.jpg" alt="Gérer un parc internet sur vsphere">
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Votre nom" required><div id="name-error" class="error"></div>
+                <input type="email" id="email" placeholder="Votre email" required><div id="email-error" class="error"></div>
+                <textarea id="message" placeholder="Votre message" required></textarea><div id="message-error" class="error"></div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        <section id="skills">
+            <h1>Compétences</h1>
+            <div class="skill">
+                <label for="html-skill">HTML</label>
+                <div class="progress-bar">
+                    <div id="html-skill" class="progress" data-value="90"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="css-skill">CSS</label>
+                <div class="progress-bar">
+                    <div id="css-skill" class="progress" data-value="80"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="js-skill">JavaScript</label>
+                <div class="progress-bar">
+                    <div id="js-skill" class="progress" data-value="70"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="php-skill">PHP</label>
+                <div class="progress-bar">
+                    <div id="php-skill" class="progress" data-value="60"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="MySQL">MySQL</label>
+                <div class="progress-bar">
+                    <div id="MySQL-skill" class="progress" data-value="70"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="Git-skill">Git</label>
+                <div class="progress-bar">
+                    <div id="Git-skill" class="progress" data-value="40"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="Linux-skill">Linux</label>
+                <div class="progress-bar">
+                    <div id="Linux-skill" class="progress" data-value="50"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
